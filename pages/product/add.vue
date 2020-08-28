@@ -56,7 +56,7 @@
                    <div class="col-sm-3">
                        <div class="b-aspect d-flex position-relative">
                             <div class="b-aspect-sizer flex-grow-1" style="padding-bottom: 100%; height: 0px;"></div><div class="b-aspect-content flex-grow-1 w-100 mw-100" style="margin-left: -100%;">
-                                <b-img src="/images/ice-cream.png" class="w-100 h-auto object-cover object-center"></b-img>
+                                <b-img src="/images/ice-cream.png" class="w-100 h-100 object-cover object-center"></b-img>
                             </div>
                                 <button type="button" aria-label="Close" class="close btn-close">×</button>
 

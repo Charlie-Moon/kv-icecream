@@ -13,8 +13,19 @@
     position: absolute;
     top: 0px;
     right: 5px;
+    color: $danger;
+    opacity: 1;
     &:focus {
         outline: none;
         box-shadow: none;
+    }
+}
+
+.badge.badge-secondary {
+    background-color: #E2E2E2;
+    color: #4D4F5C;
+    .b-form-tag-remove {
+        color: $danger;
+        opacity: 1;
     }
 }

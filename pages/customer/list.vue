@@ -2,7 +2,7 @@
 
  <section class="product">
    <h4 class="mb-4 font-weight-bold">អតិថិជន</h4>
-   <div class="thead bg-white p-4 pr-5 d-sm-flex justify-content-between align-items-center">
+   <div class="thead bg-white p-4 pr-lg-5 d-sm-flex justify-content-between align-items-center">
 
       <div class="input-group mb-4 mb-sm-0 px-0 col-sm-4">
         <label for="basic-url">ស្វែងរកតាមឈ្មោះអតិថិជន</label>
@@ -26,7 +26,7 @@
 
    </div>
    
-   <div class="table bg-white table-responsive-sm">
+   <div class="table bg-white table-responsive-lg">
     <el-table
       :data="tableData"
       style="width: 100%">

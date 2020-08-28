@@ -3,99 +3,105 @@
  <section class="product">
    <b-breadcrumb>
         <b-breadcrumb-item active>
-        អតិថិជន
+        ភ្នាក់ងារលក់
         </b-breadcrumb-item>
-        <b-breadcrumb-item href="javascript:void(0)">មើលអតិថិជន</b-breadcrumb-item>
+        <b-breadcrumb-item href="javascript:void(0)">មើលភ្នាក់ងារលក់</b-breadcrumb-item>
    </b-breadcrumb>
 
     <div class="thead bg-white p-4 mb-3 mb-sm-4 d-sm-flex flex-md-column flex-lg-row">
          <div class="text-center text-sm-left mb-4">
-              <img src="https://townsquare.media/site/204/files/2020/03/taylor-swift-donates-to-fans-coronavirus.jpg" style="width: 100px; height: 100px;" class="mb-4 mb-sm-0 object-cover object-center rounded-circle">
+            <img src="https://townsquare.media/site/204/files/2020/03/taylor-swift-donates-to-fans-coronavirus.jpg" style="width: 100px; height: 100px;" class="mb-4 mb-sm-0 object-cover object-center rounded-circle">
         </div>
         <div class="d-flex flex-column flex-lg-row">
             <div class="d-sm-flex">
-                <li class="d-sm-flex align-item-start list-unstyled">
-                  
-                    <div class="ml-lg-4">
-                        <dl class="row">
-                            <dt class="col-5 col-sm-4 mb-3">ឈ្មោះអតិថិជន</dt>
-                            <dd class="col-5 col-sm-8">Thaily</dd>
+              <li class="d-sm-flex list-unstyled">
+                
+                  <div class="ml-lg-4">
+                      <dl class="row no-gutters">
+                          <dt class="col-5 col-sm-4 mb-3">ឈ្មោះអ្នកបើកបរ</dt>
+                          <dd class="col-7 col-sm-8">Thaily Swift</dd>
 
-                            <dt class="col-5 col-sm-4 mb-3">លេខទូរស័ព្ទ</dt>
-                            <dd class="col-5 col-sm-8">
-                            0123456789
-                            </dd>
+                          <dt class="col-5 col-sm-4 mb-3">លេខទូរស័ព្ទ</dt>
+                          <dd class="col-7 col-sm-8">
+                          0123456789
+                          </dd>
 
-                            <dt class="col-5 col-sm-4 mb-3">ភេទ</dt>
-                            <dd class="col-5 col-sm-8">ស្រី</dd>
+                          <dt class="col-5 col-sm-4 mb-3">អុីមែល</dt>
+                          <dd class="col-7 col-sm-8">thaily-swift@gmail.com</dd>
 
-                            <dt class="col-5 col-sm-4 mb-3">អាយុ</dt>
-                            <dd class="col-5 col-sm-8">25</dd>
-                        
-                        </dl>
-                    </div>
-                </li>
+                          <dt class="col-5 col-sm-4 mb-3">អាសយដ្ឋាន</dt>
+                          <dd class="col-7 col-sm-8">
+                            <span style>
+                              ផ្ទះលេខ​១៥៧, ផ្លូវ២៧១,សង្កាត់បឹងសាឡាង,ខ័ណ្ឌទួលគោក, រាជធានីភ្នំពេញ
+                            </span>
+                          </dd>
+                      
+                      </dl>
+                  </div>
+              </li>
 
             </div>
             <div class="d-sm-flex">
                 <dl class="row no-gutters">
-                    <dt class="col-5 col-sm-4 mb-3">មុខរបរ</dt>
-                    <dd class="col-5 col-sm-8">បុគ្គលិកក្រុមហ៊ុនឯកជន</dd>
+                    <dt class="col-5 col-sm-4 mb-3">ម៉ាកយាន្តជំនិះ</dt>
+                    <dd class="col-7 col-sm-8">Honda Dream</dd>
 
-                    <dt class="col-5 col-sm-4 mb-3">សង្កាត់</dt>
-                    <dd class="col-5 col-sm-8">
-                    ផ្សារ​ដេប៉ូទី២
+                    <dt class="col-5 col-sm-4 mb-3">ស្លាកលេខ</dt>
+                    <dd class="col-7 col-sm-8">
+                    1GS-6181
                     </dd>
 
-                    <dt class="col-5 col-sm-4 mb-3">ខណ្ឌ</dt>
-                    <dd class="col-5 col-sm-8">ខណ្ឌទួលគោក</dd>
+                    <dt class="col-5 col-sm-4 mb-3">ឯកសារភ្ជាប់</dt>
+                    <dd class="col-7 col-sm-8">
+                      <span>
+                        Khmer ID.pdf
+                      </span>
+                      <span>
+                        Passpord.pdf
+                      </span>
+                    </dd>
 
                     <dt class="col-5 col-sm-4 mb-3">រាជធានី/ខេត្ត</dt>
-                    <dd class="col-5 col-sm-8">រាជធានីភ្នំពេញ</dd>
+                    <dd class="col-7 col-sm-8">រាជធានីភ្នំពេញ</dd>
                 
                 </dl>
               
             </div>
             <dl class="d-sm-flex">
-                <dt>
-                    <div class="custom-control custom-checkbox label-left">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck">ស្ថានភាព</label>
-                    </div>
-                </dt>
-                    
-            </dl>
+              <dt>
+                  <div class="custom-control custom-checkbox label-left">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck">ស្ថានភាព</label>
+                  </div>
+              </dt>
+                  
+          </dl>
         </div>
+         
     </div>
 
    <div class="thead bg-white p-4 pr-lg-5 d-sm-flex flex-md-column flex-lg-row">
 
       <div class="grid-group mb-4 mb-sm-0 px-0 col-lg-10">
-        <div class="d-flex flex-column flex-lg-row grid-column-2 mb-4 mb-lg-0">
+        <div class="d-flex flex-column flex-lg-row grid-column-2 mb-4 mb-sm-0">
             <div class="input-group mb-4 mb-lg-0">
-                <label for="basic-url" class="mb-3">ស្វែងរកតាមថ្ងៃ</label>
+                <label for="basic-url" class="mb-3">រកតាមថ្ងៃ</label>
                 <div class="input-group">
-                    <input type="text" class="form-control border-right-0" id="basic-url" aria-describedby="basic-addon3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text bg-white border-left-0 rounded-right"><search /></span>
-                    </div>
+                    <input type="date" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                 </div>
             </div>
             <span class="align-self-start align-self-lg-end px-3">ដល់</span>
             
         </div>
         <div class="input-group mb-4 mb-lg-0">
-                <label for="" class="mb-3 d-none d-lg-block">&nbsp;</label>
+                <label for="" class="mb-3 d-none d-sm-block">&nbsp;</label>
                 <div class="input-group">
-                    <input type="text" class="form-control border-right-0" id="basic-url" aria-describedby="basic-addon3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text bg-white border-left-0 rounded-right"><search /></span>
-                    </div>
+                    <input type="date" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                 </div>
             </div>
      
             <div class="input-group mb-4 mb-lg-0">
-                <label for="basic-url" class="mb-3">ស្វែងរកតាមថ្ងៃ</label>
+                <label for="basic-url" class="mb-3">រកតាមឈ្មោះ​អតិថិជន</label>
                 <div class="input-group">
                     <input type="text" class="form-control border-right-0" id="basic-url" aria-describedby="basic-addon3">
                     <div class="input-group-prepend">
@@ -103,9 +109,9 @@
                     </div>
                 </div>
             </div>
-            <div class="input-group mb-4 mb-lg-0">
-                <label for="" class="mb-3">ស្វែងរកតាមស្ថានភាព</label>
-                <div class="input-group">
+            <div class="input-group">
+                <label for="" class="mb-3">រកតាមស្ថានភាព</label>
+                <div class="input-group mb-4 mb-lg-0">
                     <input type="text" class="form-control border-right-0" id="basic-url" aria-describedby="basic-addon3">
                     <div class="input-group-prepend">
                         <span class="input-group-text bg-white border-left-0 rounded-right"><search /></span>
@@ -233,3 +239,10 @@ export default {
     
 }
 </script>
+
+<style scoped>
+.product .thead .col-5.col-sm-8 span + span {
+  margin-left: 10px;
+
+}
+</style>

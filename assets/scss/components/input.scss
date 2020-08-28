@@ -24,12 +24,24 @@
         }
     }
 }
-select.custom-select {
+.custom-switch {
+    .custom-control-label::before {
+        background-color: #818E94;
+    }
+    .custom-control-label::after {
+        background-color: #fff;
+    }
+    .custom-control-input:checked ~ .custom-control-label::before {
+        background-color: #95CD4A;
+        border-color: #95CD4A;
+    }
+}
+select.custom-select, .form-control {
     font-size: 13px;
 }
 
 .grid-group {
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(lg) {
         display: grid;
         grid-template-columns: repeat(5, minmax(0, 1fr));
         gap: 20px;

@@ -132,7 +132,7 @@
                             <span>ផលិតផល</span>
                             </nuxt-link >
 
-                            <nuxt-link to="/agent" class="nav-link">
+                            <nuxt-link to="/saleagent" class="nav-link">
                             <svg class="mr-3" fill="none" xmlns="http://www.w3.org/2000/svg" width="13.57" height="17.858" viewBox="0 0 13.57 17.858">
                                 <g id="sale" transform="translate(-127.6 -10)">
                                     <path id="Path_406" data-name="Path 406" d="M161.385,11.789l3.892,1.3-1.024,2.05h-5.736l-1.024-2.05Zm0,7.586a2.546,2.546,0,0,1-2.544-2.544h5.09a2.549,2.549,0,0,1-2.546,2.544Zm-4.24-2.544a4.24,4.24,0,0,0,8.481,0v-.647L167.67,12.1,161.385,10,155.1,12.1l2.045,4.089Z" transform="translate(-26.999)"/>
@@ -143,7 +143,7 @@
                             <span>ភ្នាក់ងារលក់</span>
                             </nuxt-link >
 
-                            <nuxt-link to="/client" class="nav-link">
+                            <nuxt-link to="/customer" class="nav-link">
                             <svg class="mr-3" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="16" viewBox="0 0 14 16">
                                 <defs><clipPath id="a"><rect width="14" height="16" fill="none"/></clipPath></defs><g clip-path="url(#a)"><path d="M0,16a6.018,6.018,0,0,1,6-6H8a6.018,6.018,0,0,1,6,6Zm2.6-2h8.9A4.033,4.033,0,0,0,8,12H6.1A4.035,4.035,0,0,0,2.6,14ZM3,5V4a4,4,0,0,1,8,0V5A4,4,0,1,1,3,5ZM5,4V5A2,2,0,1,0,9,5V4A2,2,0,0,0,5,4Z" /></g>
                             </svg>
