@@ -1,0 +1,16 @@
+// Breadcrumb style
+
+.breadcrumb {
+    background: none;
+    padding-left: 0;
+    font-weight: 700;
+    .breadcrumb-item {
+        font-weight: 700;
+        &.active {
+            color: $black;
+        }
+    }
+    a {
+        color: $dark;
+    }
+}

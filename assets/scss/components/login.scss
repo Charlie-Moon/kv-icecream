@@ -1,0 +1,38 @@
+// Login screen
+
+#login {
+    background-image: url(/images/bg-login.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+        top: -100px;
+        display: flex;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.15);
+        @include media-breakpoint-down(sm) {
+            top: -70px;
+            height: 150px;
+            width: 150px;
+        }
+        
+        svg {
+            @include media-breakpoint-down(sm) {
+                height: 100px;
+                width: 100px;
+                
+            }
+
+        }
+    }
+
+}

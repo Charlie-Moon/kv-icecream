@@ -1,0 +1,40 @@
+.custom-checkbox {
+    .custom-control-label::before {
+        border-color: $black;
+    }
+    .custom-control-input:checked  {
+        ~ .custom-control-label::before {
+            border-color: $black;
+            background-color: transparent;
+        }
+        ~ .custom-control-label::after {
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'><path fill='000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/></svg>") !important;
+        }
+    }
+    &.label-left {
+        padding-right: 1.5rem;
+        padding-left: 0;
+        .custom-control-label::before {
+            right: -1.5rem;
+            left: initial;
+        }
+        .custom-control-label::after {
+            right: -1.5rem;
+            left: initial;
+        }
+    }
+}
+select.custom-select {
+    font-size: 13px;
+}
+
+.grid-group {
+    @include media-breakpoint-up(sm) {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 20px;
+    }
+}
+.grid-column-2 {
+    grid-column: span 2/span 2;
+}

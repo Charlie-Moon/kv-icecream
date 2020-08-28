@@ -1,0 +1,16 @@
+.screen  {
+    &:not(.show) {
+        
+        .sidebar {
+            width: 60px;
+            .nav-link span {
+                display: none;
+                transition: all 0.5s (0.685, 0.0473, 0.346, 1);
+            }
+        }
+
+        main {
+            width: calc(100% - 60px);
+        }
+    }
+}

@@ -1,0 +1,27 @@
+$bg-body: rgba(203,203,210,.15) !default;
+$font-family-sans-serif:
+  // Safari for OS X and iOS (San Francisco)
+  -apple-system,
+  // Chrome < 56 for OS X (San Francisco)
+  BlinkMacSystemFont,
+  // Windows
+  "Segoe UI",
+  
+  // Android
+  "Roboto",
+  // Basic web fallback
+  "Helvetica Neue", Arial, sans-serif,
+  // Emoji fonts
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  // Khmer Font
+  "Battambang", !default;
+/* -------end customization-------- */
+/* finally, import Bootstrap to set the changes! */
+
+/* -------begin customization-------- */
+/* change the primary theme color to red */
+$theme-colors: (
+  danger: #FC5759,
+  primary: #1492E6,
+  dark: #2D2F39,
+);

@@ -1,0 +1,24 @@
+
+/* import only the necessary Bootstrap files */
+@import "bootstrap/scss/functions"; 
+
+@import 'components/custom';
+@import 'components/fonts';
+
+@import "~bootstrap/scss/bootstrap";
+@import 'components/components';
+@import 'components/collapse';
+@import 'components/login';
+@import 'components/main';
+@import 'components/navbar';
+@import 'components/sidebar';
+@import 'components/table';
+@import 'components/button';
+@import 'components/breadcrumb';
+@import 'components/forms';
+@import 'components/input';
+
+
+body {
+    background-color: #F4F7FC;
+}

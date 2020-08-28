@@ -1,0 +1,22 @@
+// Navbar
+.navbar {
+    .form-control {
+        background: none;
+        border: none;
+    }
+    .navbar-toggler {
+        padding: 0.25rem 0.25rem;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 0.5rem .5rem;
+        .nav-item {
+            svg {
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+}

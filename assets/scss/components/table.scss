@@ -1,0 +1,52 @@
+.hidden-columns {
+    display: none !important;
+}
+
+.table {
+    th {
+        border-top: none !important;
+        border-bottom: none !important;
+        white-space: nowrap;
+        background-color: #F7F7F7;
+    }
+    td {
+        vertical-align: middle;
+        white-space: nowrap;
+        text-align: center;
+    }
+    .btn {
+        width: auto !important;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    .dropdown-menu {
+
+        .dropdown-item {
+            display: flex;
+            align-items: center;
+        }
+
+    }
+
+}
+.thead {
+    .btn {
+        width: 200px;
+    }
+}
+
+.el-table td, .el-table th {
+    padding: 15px;
+    min-width: 0;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    position: relative;
+    text-align: center;
+}
+.el-table__body, .el-table__footer, .el-table__header {
+    table-layout: fixed;
+    border-collapse: separate;
+}
