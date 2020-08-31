@@ -26,7 +26,7 @@
 
    </div>
    
-   <div class="table bg-white table-responsive-lg">
+   <div class="table bg-white table-responsive">
     <el-table
       :data="tableData"
       style="width: 100%">
