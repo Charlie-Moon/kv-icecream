@@ -101,12 +101,13 @@
             </div>
      
             <div class="input-group mb-4 mb-lg-0">
-                <label for="basic-url" class="mb-3">រកតាមឈ្មោះ​អតិថិជន</label>
+                <label for="basic-url" class="mb-3">រកឈ្មោះ​អតិថិជន</label>
                 <div class="input-group">
-                    <input type="text" class="form-control border-right-0" id="basic-url" aria-describedby="basic-addon3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text bg-white border-left-0 rounded-right"><search /></span>
-                    </div>
+                    <b-form-select >
+                      <b-form-select-option value="chamkamon">ខណ្ឌ ចំការមន</b-form-select-option>
+                      <b-form-select-option value="meanchey">ខណ្ឌ មានជ័យ</b-form-select-option>
+                      <b-form-select-option value="toulkork">ខណ្ឌ ទួលគក</b-form-select-option>
+                    </b-form-select>
                 </div>
             </div>
             <div class="input-group">
@@ -136,7 +137,7 @@
       <el-table-column
         prop="num"
         label="#"
-        width="80px">
+        width="50px">
       </el-table-column>
       <el-table-column
         prop="image"
@@ -146,21 +147,29 @@
         <b-img src="/images/img-1.png" fluid class="img-circle-10" alt="Responsive image"></b-img>
       </el-table-column>
       <el-table-column
-        prop="cus_id"
-        label="លេខសំគាល់អតិថិជន"
+        prop="id"
+        label=" លេខសម្គាល់ការបញ្ជាទិញ"
         width="180px">
       </el-table-column>
       <el-table-column
+        prop="date"
+        label="កាលបរិច្ឆេទបង្កើត">
+      </el-table-column>
+      <el-table-column
+        prop="time"
+        label="ម៉ោងស្នើរសុំ">
+      </el-table-column>
+      <el-table-column
+        prop="place"
+        label="ទីតាំងការស្នើរសុំ">
+      </el-table-column>
+      <el-table-column
         prop="name"
-        label="ឈ្មោះ​ផលិតផល">
+        label="ឈ្មោះ​អតិថិជន">
       </el-table-column>
       <el-table-column
-        prop="phone"
-        label="លេខទូរស័ព្ទ">
-      </el-table-column>
-      <el-table-column
-        prop="request"
-        label="ការស្នើសុំសរុប">
+        prop="end"
+        label="ម៉ោងបញ្ចប់">
       </el-table-column>
       <el-table-column
         prop="status"
@@ -170,10 +179,7 @@
           
         </b-form-checkbox>
       </el-table-column>
-      <el-table-column
-        prop="date"
-        label="កាលបរិច្ឆេទបង្កើត">
-      </el-table-column>
+      
       <el-table-column
         prop="option"
         width="80"
@@ -213,18 +219,13 @@ export default {
         checked: false,
         tableData: [{
           num: '1',
-          cus_id: 'A001',
+          id: 'A001',
           name: 'Thaily',
-          phone: '0123456789',
-          request: '80',
+          time: '2:00 PM',
+          end: '2:30 PM',
+          place: 'Setec',
           date: '27-05-2020',
         }, 
-        ],
-        selected: null,
-        options: [
-          { value: null, text: 'ខណ្ឌ ចំការមន' },
-          { value: 'a', text: 'ខណ្ឌ មានជ័យ' },
-          { value: 'b', text: 'ខណ្ឌ ទួលគក' },
         ]
       }
     },

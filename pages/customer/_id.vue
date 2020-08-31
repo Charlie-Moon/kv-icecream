@@ -75,10 +75,8 @@
             <div class="input-group mb-4 mb-lg-0">
                 <label for="basic-url" class="mb-3">ស្វែងរកតាមថ្ងៃ</label>
                 <div class="input-group">
-                    <input type="text" class="form-control border-right-0" id="basic-url" aria-describedby="basic-addon3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text bg-white border-left-0 rounded-right"><search /></span>
-                    </div>
+                    <input type="date" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    
                 </div>
             </div>
             <span class="align-self-start align-self-lg-end px-3">ដល់</span>
@@ -87,20 +85,19 @@
         <div class="input-group mb-4 mb-lg-0">
                 <label for="" class="mb-3 d-none d-lg-block">&nbsp;</label>
                 <div class="input-group">
-                    <input type="text" class="form-control border-right-0" id="basic-url" aria-describedby="basic-addon3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text bg-white border-left-0 rounded-right"><search /></span>
-                    </div>
+                    <input type="date" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    
                 </div>
             </div>
      
             <div class="input-group mb-4 mb-lg-0">
-                <label for="basic-url" class="mb-3">ស្វែងរកតាមថ្ងៃ</label>
+                <label for="basic-url" class="mb-3">ស្វែងរកភ្នាក់ងារលក់</label>
                 <div class="input-group">
-                    <input type="text" class="form-control border-right-0" id="basic-url" aria-describedby="basic-addon3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text bg-white border-left-0 rounded-right"><search /></span>
-                    </div>
+                     <b-form-select :options="options">
+                        <b-form-select-option value="chamkamon">ខណ្ឌ ចំការមន</b-form-select-option>
+                        <b-form-select-option value="meanchey">ខណ្ឌ មានជ័យ</b-form-select-option>
+                        <b-form-select-option value="toulkork">ខណ្ឌ ទួលគក</b-form-select-option>
+                      </b-form-select>
                 </div>
             </div>
             <div class="input-group mb-4 mb-lg-0">
@@ -133,41 +130,48 @@
         width="80px">
       </el-table-column>
       <el-table-column
-        prop="image"
-        label="រូបភាព"
-        width="100px"
+        prop="id"
+        label="លេខសម្គាល់ការបញ្ជាទិញ"
+        width="80px"
         >
-        <b-img src="/images/img-1.png" fluid class="img-circle-10" alt="Responsive image"></b-img>
       </el-table-column>
       <el-table-column
-        prop="cus_id"
-        label="លេខសំគាល់អតិថិជន"
+        prop="agt_name"
+        label="ឈ្មោះ​ភ្នាក់ងារលក់"
         width="180px">
       </el-table-column>
       <el-table-column
-        prop="name"
-        label="ឈ្មោះ​ផលិតផល">
+        prop="date"
+        label="កាលបរិច្ឆេទបង្កើត"
+        width="130px">
+      </el-table-column>
+       <el-table-column
+        prop="time"
+        label="ម៉ោងស្នើរសុំ">
       </el-table-column>
       <el-table-column
-        prop="phone"
-        label="លេខទូរស័ព្ទ">
+        prop="place"
+        label="ទីតាំងការស្នើរសុំ"
+        width="120px">
+      </el-table-column>
+     
+      <el-table-column
+        prop="cus_name"
+        label="ឈ្មោះ​អតិថិជន្លាកលេខ">
       </el-table-column>
       <el-table-column
-        prop="request"
-        label="ការស្នើសុំសរុប">
+        prop="end"
+        label="ម៉ោងបញ្ចប់">
+        <span class="text-primary">2:30 PM</span>
       </el-table-column>
       <el-table-column
         prop="status"
         label="ស្ថានភាព"
         >
-        <b-form-checkbox v-model="checked" name="check-button" switch>
-          
-        </b-form-checkbox>
+        <span class="text-primary">ជោគជ័យ</span>
+
       </el-table-column>
-      <el-table-column
-        prop="date"
-        label="កាលបរិច្ឆេទបង្កើត">
-      </el-table-column>
+      
       <el-table-column
         prop="option"
         width="80"
@@ -176,6 +180,9 @@
           <template v-slot:button-content>
            <ellish/>
           </template>
+          <b-dropdown-item>
+            <eye /> <span class="ml-2">មើល</span>
+          </b-dropdown-item>
           <b-dropdown-item>
             <edit /> <span class="ml-2">កែសម្រួល</span>
           </b-dropdown-item>
@@ -207,18 +214,19 @@ export default {
         checked: false,
         tableData: [{
           num: '1',
-          cus_id: 'A001',
           name: 'Thaily',
           phone: '0123456789',
+          type: 'ម៉ូតូ',
+          plate: '1GS-6181',
           request: '80',
           date: '27-05-2020',
         }, 
         ],
         selected: null,
         options: [
-          { value: null, text: 'ខណ្ឌ ចំការមន' },
-          { value: 'a', text: 'ខណ្ឌ មានជ័យ' },
-          { value: 'b', text: 'ខណ្ឌ ទួលគក' },
+          { value: 'a', text: 'ខណ្ឌ ចំការមន' },
+          { value: 'b', text: 'ខណ្ឌ មានជ័យ' },
+          { value: 'c', text: 'ខណ្ឌ ទួលគក' },
         ]
       }
     },

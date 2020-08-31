@@ -66,16 +66,25 @@
           <template v-slot:button-content>
            <ellish/>
           </template>
-          <b-dropdown-item>
+          <b-dropdown-item to="/product/edit">
             <edit /> <span class="ml-2">កែសម្រួល</span>
           </b-dropdown-item>
-          <b-dropdown-item>
+          <b-dropdown-item v-b-modal.modal-1>
             <delete /> <span class="ml-2">លុប</span>
           </b-dropdown-item>
         </b-dropdown>
       </el-table-column>
     </el-table>
   </div>
+  <b-modal id="modal-1" hide-footer>
+    <p class="my-4 h4 text-center"><alert /><strong class="ml-2">បញ្ជាក់</strong></p>
+    <h5 class="text-center">តើអ្នកពិតជាចង់លុបផលិតផលនេះ?</h5>
+    <h5 class="text-center">Scoop Bucket</h5>
+    <div class="text-center my-3 btn-groups">
+      <button class="btn btn-dark">យល់ព្រម</button>
+      <button class="btn btn-danger ml-3">បោះបង់</button>
+    </div>
+  </b-modal>
 
  </section>
   

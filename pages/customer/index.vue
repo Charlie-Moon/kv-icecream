@@ -16,12 +16,16 @@
       <div class="input-group mb-4 mb-sm-0 px-0 col-sm-3 mr-auto ml-sm-4">
         <label for="basic-url">ស្វែងរកតាមទីតាំង</label>
         <div class="input-group">
-          <b-form-select v-model="selected" :options="options"></b-form-select>
+           <b-form-select :options="options">
+              <b-form-select-option value="chamkamon">ខណ្ឌ ចំការមន</b-form-select-option>
+              <b-form-select-option value="meanchey">ខណ្ឌ មានជ័យ</b-form-select-option>
+              <b-form-select-option value="toulkork">ខណ្ឌ ទួលគក</b-form-select-option>
+            </b-form-select>
         </div>
       </div>
 
-      <nuxt-link to="/product/add" tag="button" class="btn btn-danger d-flex justify-content-center align-items-center">
-        <plus /> <span class="ml-2">ផលិតផលថ្មី</span>
+      <nuxt-link to="" tag="button" class="btn btn-danger d-flex justify-content-center align-items-center">
+        <download /> <span class="ml-2">ទាញយក</span>
       </nuxt-link>
 
    </div>
@@ -79,16 +83,25 @@
           <template v-slot:button-content>
            <ellish/>
           </template>
-          <b-dropdown-item>
-            <edit /> <span class="ml-2">កែសម្រួល</span>
+          <b-dropdown-item to="/customer/1">
+            <eye /> <span class="ml-2">មើល</span>
           </b-dropdown-item>
-          <b-dropdown-item>
+          <b-dropdown-item v-b-modal.modal-1>
             <delete /> <span class="ml-2">លុប</span>
           </b-dropdown-item>
         </b-dropdown>
       </el-table-column>
     </el-table>
   </div>
+  <b-modal id="modal-1" hide-footer>
+    <p class="my-4 h4 text-center"><alert /><strong class="ml-2">បញ្ជាក់</strong></p>
+    <h5 class="text-center">តើអ្នកពិតជាចង់លុបអតិថិជននេះ?</h5>
+    <h5 class="text-center">Thaily</h5>
+    <div class="text-center my-3 btn-groups">
+      <button class="btn btn-dark">យល់ព្រម</button>
+      <button class="btn btn-danger ml-3">បោះបង់</button>
+    </div>
+  </b-modal>
 
  </section>
   
@@ -98,6 +111,8 @@ import Navbar from '~/components/svg/ellish.vue';
 import Edit from '~/components/svg/edit.vue';
 import Delete from '~/components/svg/delete.vue';
 import Plus from '~/components/svg/plus.vue';
+import Eye from '~/components/svg/eye.vue';
+import Download from '~/components/svg/download.vue';
 import { Table, TableColumn, } from 'element-ui'
 
 export default {

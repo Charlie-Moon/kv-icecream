@@ -170,7 +170,7 @@
                                     <span>ការកំណត់</span>
                                 </template>
                                 <li class="dropdown-item">
-                                    <nuxt-link to="/saleagent" class="nav-link">
+                                    <nuxt-link to="/settings/agent" class="nav-link">
                                             <svg class="mr-3" fill="fillCurrent" xmlns="http://www.w3.org/2000/svg" width="13.57" height="17.858" viewBox="0 0 13.57 17.858">
                                         <g id="sale" transform="translate(-127.6 -10)">
                                             <path id="Path_406" data-name="Path 406" d="M161.385,11.789l3.892,1.3-1.024,2.05h-5.736l-1.024-2.05Zm0,7.586a2.546,2.546,0,0,1-2.544-2.544h5.09a2.549,2.549,0,0,1-2.546,2.544Zm-4.24-2.544a4.24,4.24,0,0,0,8.481,0v-.647L167.67,12.1,161.385,10,155.1,12.1l2.045,4.089Z" transform="translate(-26.999)"/>

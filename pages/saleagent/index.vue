@@ -21,21 +21,21 @@
       <div class="input-group mb-4 mb-sm-0 px-0 col-sm-2 ml-sm-4">
         <label for="basic-url">ស្វែងរកតាមទីតាំង</label>
         <div class="input-group">
-          <select class="custom-select" id="__BVID__43">
-            <option value>ខណ្ឌ ចំការមន</option>
-            <option value="a">ខណ្ឌ មានជ័យ</option>
-            <option value="b">ខណ្ឌ ទួលគក</option>
-          </select>
+           <b-form-select >
+              <b-form-select-option value="chamkamon">ខណ្ឌ ចំការមន</b-form-select-option>
+              <b-form-select-option value="meanchey">ខណ្ឌ មានជ័យ</b-form-select-option>
+              <b-form-select-option value="toulkork">ខណ្ឌ ទួលគក</b-form-select-option>
+            </b-form-select>
         </div>
       </div>
       <div class="input-group mb-4 mb-sm-0 px-0 col-sm-2 mr-auto ml-sm-4">
         <label for="basic-url">ស្វែងរកប្រភេទភ្នាក់ងារលក់</label>
         <div class="input-group">
-          <select class="custom-select" id="__BVID__43">
-            <option value>ទាំងអស់</option>
-            <option value="a">ខណ្ឌ មានជ័យ</option>
-            <option value="b">ខណ្ឌ ទួលគក</option>
-          </select>
+           <b-form-select>
+              <b-form-select-option selected value="chamkamon">ទាំងអស់</b-form-select-option>
+              <b-form-select-option value="meanchey">ខណ្ឌ មានជ័យ</b-form-select-option>
+              <b-form-select-option value="toulkork">ខណ្ឌ ទួលគក</b-form-select-option>
+            </b-form-select>
         </div>
       </div>
 
@@ -49,7 +49,7 @@
           <span class="ml-2">ភ្នាក់ងារលក់ថ្មី</span>
         </nuxt-link>
         <nuxt-link
-          to="/saleagent/add"
+          to=""
           tag="button"
           class="btn w-100 btn-danger d-flex justify-content-center align-items-center ml-sm-3"
         >
@@ -102,7 +102,6 @@
         label="ស្ថានភាព"
         >
         <b-form-checkbox v-model="checked" name="check-button" switch>
-          
         </b-form-checkbox>
       </el-table-column>
       <el-table-column
@@ -118,27 +117,38 @@
           <template v-slot:button-content>
            <ellish/>
           </template>
-          <b-dropdown-item>
-            <eye /> <span class="ml-2">មើល</span>
+          <b-dropdown-item to="/saleagent/1">
+              <eye /> <span class="ml-2">មើល</span>
           </b-dropdown-item>
-          <b-dropdown-item>
+          <b-dropdown-item to="/saleagent/edit">
             <edit /> <span class="ml-2">កែសម្រួល</span>
           </b-dropdown-item>
-          <b-dropdown-item>
+          <b-dropdown-item v-b-modal.modal-1>
             <delete /> <span class="ml-2">លុប</span>
           </b-dropdown-item>
         </b-dropdown>
       </el-table-column>
     </el-table>
   </div>
+  <b-modal id="modal-1" hide-footer>
+    <p class="my-4 h4 text-center"><alert /><strong class="ml-2">បញ្ជាក់</strong></p>
+    <h5 class="text-center">តើអ្នកពិតជាចង់លុបភ្នាក់ងារនេះ?</h5>
+    <h5 class="text-center">Thaily</h5>
+    <div class="text-center my-3 btn-groups">
+      <button class="btn btn-dark">យល់ព្រម</button>
+      <button class="btn btn-danger ml-3">បោះបង់</button>
+    </div>
+  </b-modal>
   </section>
 </template>
+
 <script>
 import Navbar from "~/components/svg/ellish.vue";
 import Edit from "~/components/svg/edit.vue";
 import Delete from "~/components/svg/delete.vue";
 import Plus from "~/components/svg/plus.vue";
 import Download from "~/components/svg/download.vue";
+import Alert from "~/components/svg/alert.vue";
 import { Table, TableColumn } from "element-ui";
 
 export default {

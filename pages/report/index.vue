@@ -36,7 +36,7 @@
               </div>
               <div class="ml-3 flex-1">
                 <dl>
-                  <dt class="mb-2 h5 font-weight-bold">31000 ការបញ្ជាទិញ</dt>
+                  <dt class="mb-2 h6 font-weight-bold">31000 ការបញ្ជាទិញ</dt>
                   <dd class="mb-0">
                     <div class="leading-7 font-medium text-sm">ចំនួនបញ្ជាទិញសរុប</div>
                   </dd>
@@ -59,7 +59,7 @@
               </div>
               <div class="ml-3 flex-1">
                 <dl>
-                  <dt class="mb-2 h5 font-weight-bold">800 ការបញ្ជាទិញ</dt>
+                  <dt class="mb-2 h6 font-weight-bold">800 ការបញ្ជាទិញ</dt>
                   <dd class="mb-0">
                     <div class="leading-7 font-medium text-sm">ការបញ្ជាទិញជោគជ័យ</div>
                   </dd>
@@ -82,7 +82,7 @@
               </div>
               <div class="ml-3 flex-1">
                 <dl>
-                  <dt class="mb-2 h5 font-weight-bold">200 ការបញ្ជាទិញ</dt>
+                  <dt class="mb-2 h6 font-weight-bold">200 ការបញ្ជាទិញ</dt>
                   <dd class="mb-0">
                     <div class="leading-7 font-medium text-sm">ការបញ្ជាទិញ​បរាជ័យ</div>
                   </dd>
@@ -145,7 +145,7 @@
    </div>
 
     <div class="table table-responsive bg-white">
-    <el-table
+       <el-table
       :data="tableData"
       style="width: 100%">
       <el-table-column
@@ -154,47 +154,47 @@
         width="80px">
       </el-table-column>
       <el-table-column
-        prop="image"
-        label="រូបភាព"
-        width="80px"
+        prop="id"
+        label="លេខសម្គាល់ការបញ្ជាទិញ"
         >
-        <b-img src="/images/user-1.png" fluid class="rounded-circle" alt="Responsive image"></b-img>
       </el-table-column>
       <el-table-column
-        prop="name"
+        prop="agt_name"
         label="ឈ្មោះ​ភ្នាក់ងារលក់"
         width="180px">
-      </el-table-column>
-       <el-table-column
-        prop="phone"
-        label="លេខទូរស័ព្ទ">
-      </el-table-column>
-      <el-table-column
-        prop="type"
-        label="ប្រភេទអ្នកលក់">
-      </el-table-column>
-     
-      <el-table-column
-        prop="plate"
-        label="ស្លាកលេខ">
-      </el-table-column>
-      <el-table-column
-        prop="request"
-        label="ការស្នើសុំសរុប">
-      </el-table-column>
-      <el-table-column
-        prop="status"
-        label="ស្ថានភាព"
-        >
-        <b-form-checkbox v-model="checked" name="check-button" switch>
-          
-        </b-form-checkbox>
       </el-table-column>
       <el-table-column
         prop="date"
         label="កាលបរិច្ឆេទបង្កើត"
         width="130px">
       </el-table-column>
+       <el-table-column
+        prop="time"
+        label="ម៉ោងស្នើរសុំ">
+      </el-table-column>
+      <el-table-column
+        prop="place"
+        label="ទីតាំងការស្នើរសុំ"
+        width="125px">
+      </el-table-column>
+     
+      <el-table-column
+        prop="cus_name"
+        label="ឈ្មោះ​អតិថិជន">
+      </el-table-column>
+      <el-table-column
+        prop="end"
+        label="ម៉ោងបញ្ចប់">
+        <span class="text-primary">2:30 PM</span>
+      </el-table-column>
+      <el-table-column
+        prop="status"
+        label="ស្ថានភាព"
+        >
+        <span class="text-primary">ជោគជ័យ</span>
+
+      </el-table-column>
+      
       <el-table-column
         prop="option"
         width="80"
@@ -236,12 +236,15 @@ export default {
       checked: false,
        tableData: [{
           num: '1',
-          name: 'Thaily',
-          phone: '0123456789',
-          type: 'ម៉ូតូ',
-          plate: '1GS-6181',
+          id: 'R00001',
+          agt_name: 'John',
+          cus_name: 'Thaily',
+          place: 'Setec',
+          time: '2:00PM',
+          end: '2:30PM',
           request: '80',
           date: '27-05-2020',
+          status: '27-05-2020',
         }, 
       ],
     };

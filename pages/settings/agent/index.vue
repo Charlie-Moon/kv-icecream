@@ -9,7 +9,7 @@
    <div class="thead bg-white p-4 pr-lg-5 d-sm-flex justify-content-between align-items-center">
 
       <div class="input-group mb-4 mb-sm-0 px-0 col-sm-4">
-        <label for="basic-url">ស្វែងរកតាមឈ្មោះផលិតផល</label>
+        <label for="basic-url">ស្វែងរក</label>
         <div class="input-group">
           <input type="text" class="form-control border-right-0" id="basic-url" aria-describedby="basic-addon3">
           <div class="input-group-prepend">
