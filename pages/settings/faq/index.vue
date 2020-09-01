@@ -9,7 +9,7 @@
    <div class="thead bg-white p-4 pr-lg-5 d-sm-flex justify-content-between align-items-center">
 
       <div class="input-group mb-4 mb-sm-0 px-0 col-sm-4">
-        <label for="basic-url">ស្វែងរកតាមឈ្មោះផលិតផល</label>
+        <label for="basic-url">ស្វែងរក</label>
         <div class="input-group">
           <input type="text" class="form-control border-right-0" id="basic-url" aria-describedby="basic-addon3">
           <div class="input-group-prepend">
@@ -18,7 +18,7 @@
         </div>
       </div>
 
-      <nuxt-link to="settings/faq/add" tag="button" class="btn btn-danger d-flex justify-content-center align-items-center">
+      <nuxt-link to="/settings/faq/add" tag="button" class="btn btn-danger d-flex justify-content-center align-items-center">
         <plus /> <span class="ml-2">សំណួរវាយតម្លៃ</span>
       </nuxt-link>
 
@@ -51,17 +51,25 @@
           <template v-slot:button-content>
            <ellish/>
           </template>
-          <b-dropdown-item>
+          <b-dropdown-item to="/settings/faq/edit">
             <edit /> <span class="ml-2">កែសម្រួល</span>
           </b-dropdown-item>
-          <b-dropdown-item>
+          <b-dropdown-item v-b-modal.modal-1>
             <delete /> <span class="ml-2">លុប</span>
           </b-dropdown-item>
         </b-dropdown>
       </el-table-column>
     </el-table>
   </div>
-
+  <b-modal id="modal-1" hide-footer>
+    <p class="my-4 h4 text-center"><alert /><strong class="ml-2">បញ្ជាក់</strong></p>
+    <h5 class="text-center">តើអ្នកពិតជាចង់លុបភ្នាក់ងារនេះ?</h5>
+    <h5 class="text-center">Thaily</h5>
+    <div class="text-center my-3 btn-groups">
+      <button class="btn btn-dark">យល់ព្រម</button>
+      <button class="btn btn-danger ml-3">បោះបង់</button>
+    </div>
+  </b-modal>
  </section>
   
 </template>

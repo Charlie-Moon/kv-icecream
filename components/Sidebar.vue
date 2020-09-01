@@ -40,7 +40,7 @@
                     </b-navbar-toggle>
                 </div> -->
                 <div class="overflow-y-auto nav-sm">
-                    <nav class="px-2 space-y-1">
+                    <nav class="flex-1">
                             <nuxt-link to="/dashboard" class="nav-link">
                             <svg class="mr-3" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                 <path id="chart-pie-alt-regular" d="M14.413,9H7V1.585a.5.5,0,0,0-.492-.507.471.471,0,0,0-.066,0A7.494,7.494,0,0,0,0,8.752,7.592,7.592,0,0,0,7.245,16c.084,0,.168,0,.252,0a7.494,7.494,0,0,0,7.417-6.442A.5.5,0,0,0,14.413,9ZM7.5,14.5c-.067,0-.135,0-.2,0A6.083,6.083,0,0,1,1.5,8.7a5.986,5.986,0,0,1,4-5.855V10.5h7.649A6.025,6.025,0,0,1,7.5,14.5ZM9.022,0H8.99A.5.5,0,0,0,8.5.507V7.5H15.49A.5.5,0,0,0,16,6.975,7.518,7.518,0,0,0,9.022,0Z" transform="translate(0.003)" />
@@ -56,7 +56,7 @@
                             ផលិតផល
                             </nuxt-link >
 
-                            <nuxt-link to="/agent" class="nav-link">
+                            <nuxt-link to="/saleagent" class="nav-link">
                             <svg class="mr-3" fill="none" xmlns="http://www.w3.org/2000/svg" width="13.57" height="17.858" viewBox="0 0 13.57 17.858">
                                 <g id="sale" transform="translate(-127.6 -10)">
                                     <path id="Path_406" data-name="Path 406" d="M161.385,11.789l3.892,1.3-1.024,2.05h-5.736l-1.024-2.05Zm0,7.586a2.546,2.546,0,0,1-2.544-2.544h5.09a2.549,2.549,0,0,1-2.546,2.544Zm-4.24-2.544a4.24,4.24,0,0,0,8.481,0v-.647L167.67,12.1,161.385,10,155.1,12.1l2.045,4.089Z" transform="translate(-26.999)"/>
@@ -67,7 +67,7 @@
                             ភ្នាក់ងារលក់
                             </nuxt-link >
 
-                            <nuxt-link to="/client" class="nav-link">
+                            <nuxt-link to="/customer" class="nav-link">
                             <svg class="mr-3" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="16" viewBox="0 0 14 16">
                                 <defs><clipPath id="a"><rect width="14" height="16" fill="none"/></clipPath></defs><g clip-path="url(#a)"><path d="M0,16a6.018,6.018,0,0,1,6-6H8a6.018,6.018,0,0,1,6,6Zm2.6-2h8.9A4.033,4.033,0,0,0,8,12H6.1A4.035,4.035,0,0,0,2.6,14ZM3,5V4a4,4,0,0,1,8,0V5A4,4,0,1,1,3,5ZM5,4V5A2,2,0,1,0,9,5V4A2,2,0,0,0,5,4Z" /></g>
                             </svg>
@@ -88,20 +88,50 @@
                             របាយការណ៏
                             </nuxt-link >
 
-                            <nuxt-link to="/setting" class="nav-link">
-                            <svg class="mr-3" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="15" viewBox="0 0 16 15">
-                                <defs>
-                                    <clipPath id="clip-path">
-                                    <rect width="16" height="15"/>
-                                    </clipPath>
-                                </defs>
-                                <g id="icon_setting" clip-path="url(#clip-path)">
-                                    <path id="Path_108" data-name="Path 108" d="M12.936,5.058l1.07-2.043L12.644,1.653,10.6,2.723a3.484,3.484,0,0,0-1.07-.389L8.754,0H6.809L6.03,2.237a4.065,4.065,0,0,0-.973.389L3.015,1.556,1.556,3.015l1.07,2.043a4.065,4.065,0,0,0-.389.973L0,6.809V8.754l2.237.778c.1.389.292.681.389,1.07l-1.07,2.043,1.362,1.362,2.043-1.07a3.484,3.484,0,0,0,1.07.389l.778,2.237H8.754l.778-2.237c.389-.1.681-.292,1.07-.389l2.043,1.07,1.362-1.362L12.936,10.6a3.484,3.484,0,0,0,.389-1.07l2.237-.778V6.809L13.325,6.03A4.065,4.065,0,0,0,12.936,5.058ZM7.781,10.7A2.866,2.866,0,0,1,4.863,7.781,2.866,2.866,0,0,1,7.781,4.863,2.866,2.866,0,0,1,10.7,7.781,2.866,2.866,0,0,1,7.781,10.7Z" />
-                                </g>
-                            </svg>
-
-                            ការកំណត់
-                            </nuxt-link >
+                             <b-dropdown variant="none" class="btn-block nav-link p-0 border-left-0">
+                                <template v-slot:button-content class="btn-block">
+                                    <gear />
+                                    ការកំណត់
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13.343" height="6.671" viewBox="0 0 13.343 6.671">
+                                        <g id="menu" transform="translate(0 -63.75)">
+                                            <g id="arrow-drop-down" transform="translate(0 63.75)">
+                                            <path id="Path_404" data-name="Path 404" d="M0,63.75l6.671,6.671,6.671-6.671Z" transform="translate(0 -63.75)" fill="#4d4f5c"/>
+                                            </g>
+                                        </g>
+                                        </svg>
+                                </template>
+                                <li class="dropdown-item">
+                                    <nuxt-link to="/settings/agent" class="nav-link">
+                                            <svg class="mr-3" fill="fillCurrent" xmlns="http://www.w3.org/2000/svg" width="13.57" height="17.858" viewBox="0 0 13.57 17.858">
+                                        <g id="sale" transform="translate(-127.6 -10)">
+                                            <path id="Path_406" data-name="Path 406" d="M161.385,11.789l3.892,1.3-1.024,2.05h-5.736l-1.024-2.05Zm0,7.586a2.546,2.546,0,0,1-2.544-2.544h5.09a2.549,2.549,0,0,1-2.546,2.544Zm-4.24-2.544a4.24,4.24,0,0,0,8.481,0v-.647L167.67,12.1,161.385,10,155.1,12.1l2.045,4.089Z" transform="translate(-26.999)"/>
+                                            <path id="Path_407" data-name="Path 407" d="M454.347,107.395a.847.847,0,1,0-.847-.847.847.847,0,0,0,.847.847" transform="translate(-319.961 -93.956)"/>
+                                            <path id="Path_408" data-name="Path 408" d="M135.233,622.69V619.34c2.535.239,4.24,1.547,4.24,3.349Zm-1.695-3.349v3.349H129.3c0-1.8,1.707-3.111,4.242-3.349Zm.847-1.74c-3.994,0-6.786,2.092-6.786,5.09v1.7h13.57v-1.7c0-3-2.79-5.09-6.784-5.09Z" transform="translate(0 -596.528)"/>
+                                        </g>
+                                    </svg>
+                                       ប្រភេទភ្នាក់ងារលក់
+                                    </nuxt-link>
+                                </li>
+                                <li class="dropdown-item">
+                                    <nuxt-link to="/settings/reason" class="nav-link">
+                                        <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                            <path id="check-circle-solid" d="M26,17a9,9,0,1,1-9-9A9,9,0,0,1,26,17ZM15.959,21.765l6.677-6.677a.581.581,0,0,0,0-.821l-.821-.821a.581.581,0,0,0-.821,0l-5.446,5.446-2.542-2.542a.581.581,0,0,0-.821,0l-.821.821a.581.581,0,0,0,0,.821l3.774,3.774a.581.581,0,0,0,.821,0Z" transform="translate(-8 -8)" fill="#4d4f5c"/>
+                                        </svg>
+                                        មូលហេតុបោះបង់
+                                    </nuxt-link>
+                                </li>
+                                <li class="dropdown-item">
+                                    <nuxt-link to="/settings/faq" class="nav-link">
+                                        <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                            <g id="Group_5720" data-name="Group 5720" transform="translate(-55 -695)">
+                                                <circle id="Ellipse_134" data-name="Ellipse 134" cx="9" cy="9" r="9" transform="translate(55 695)" fill="#4d4f5c"/>
+                                                <path id="star-solid_2_" data-name="star-solid (2)" d="M24.561.29,23.451,2.542,20.966,2.9a.545.545,0,0,0-.3.929l1.8,1.752L22.037,8.06a.544.544,0,0,0,.789.573l2.223-1.169,2.223,1.169a.544.544,0,0,0,.789-.573l-.425-2.475,1.8-1.752a.545.545,0,0,0-.3-.929l-2.485-.362L25.538.29a.545.545,0,0,0-.976,0Z" transform="translate(39.012 699.351)" fill="#fff"/>
+                                            </g>
+                                        </svg>
+                                        សំណួរវាយតម្លៃ
+                                    </nuxt-link>
+                                </li>
+                            </b-dropdown>
                     </nav>
                 </div>
                 
@@ -164,10 +194,18 @@
                             <span>របាយការណ៏</span>
                             </nuxt-link >
                             
-                            <b-dropdown variant="none" class="btn-block">
+                            <b-dropdown variant="none" class="btn-block nav-link p-0 border-left-0">
                                 <template v-slot:button-content class="btn-block">
                                     <gear />
-                                    <span>ការកំណត់</span>
+                                    <span>ការកំណត់
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13.343" height="6.671" viewBox="0 0 13.343 6.671">
+                                        <g id="menu" transform="translate(0 -63.75)">
+                                            <g id="arrow-drop-down" transform="translate(0 63.75)">
+                                            <path id="Path_404" data-name="Path 404" d="M0,63.75l6.671,6.671,6.671-6.671Z" transform="translate(0 -63.75)" fill="#4d4f5c"/>
+                                            </g>
+                                        </g>
+                                        </svg>
+                                    </span>
                                 </template>
                                 <li class="dropdown-item">
                                     <nuxt-link to="/settings/agent" class="nav-link">
@@ -178,7 +216,7 @@
                                             <path id="Path_408" data-name="Path 408" d="M135.233,622.69V619.34c2.535.239,4.24,1.547,4.24,3.349Zm-1.695-3.349v3.349H129.3c0-1.8,1.707-3.111,4.242-3.349Zm.847-1.74c-3.994,0-6.786,2.092-6.786,5.09v1.7h13.57v-1.7c0-3-2.79-5.09-6.784-5.09Z" transform="translate(0 -596.528)"/>
                                         </g>
                                     </svg>
-                                        ប្រភេទភ្នាក់ងារលក់
+                                       <span>ប្រភេទភ្នាក់ងារលក់</span>
                                     </nuxt-link>
                                 </li>
                                 <li class="dropdown-item">
@@ -186,7 +224,7 @@
                                         <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
                                             <path id="check-circle-solid" d="M26,17a9,9,0,1,1-9-9A9,9,0,0,1,26,17ZM15.959,21.765l6.677-6.677a.581.581,0,0,0,0-.821l-.821-.821a.581.581,0,0,0-.821,0l-5.446,5.446-2.542-2.542a.581.581,0,0,0-.821,0l-.821.821a.581.581,0,0,0,0,.821l3.774,3.774a.581.581,0,0,0,.821,0Z" transform="translate(-8 -8)" fill="#4d4f5c"/>
                                         </svg>
-                                        មូលហេតុបោះបង់
+                                        <span>មូលហេតុបោះបង់</span>
                                     </nuxt-link>
                                 </li>
                                 <li class="dropdown-item">
@@ -197,7 +235,7 @@
                                                 <path id="star-solid_2_" data-name="star-solid (2)" d="M24.561.29,23.451,2.542,20.966,2.9a.545.545,0,0,0-.3.929l1.8,1.752L22.037,8.06a.544.544,0,0,0,.789.573l2.223-1.169,2.223,1.169a.544.544,0,0,0,.789-.573l-.425-2.475,1.8-1.752a.545.545,0,0,0-.3-.929l-2.485-.362L25.538.29a.545.545,0,0,0-.976,0Z" transform="translate(39.012 699.351)" fill="#fff"/>
                                             </g>
                                         </svg>
-                                        សំណួរវាយតម្លៃ
+                                        <span>សំណួរវាយតម្លៃ</span>
                                     </nuxt-link>
                                 </li>
                             </b-dropdown>

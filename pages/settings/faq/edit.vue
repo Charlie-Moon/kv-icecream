@@ -2,9 +2,9 @@
     <div>
        <b-breadcrumb>
             <b-breadcrumb-item active>
-            មូលហេតុបោះបង់
+            សំណួរវាយតម្លៃ
             </b-breadcrumb-item>
-            <b-breadcrumb-item href="javascript:void(0)">មូលហេតុបោះបង់ថ្មី</b-breadcrumb-item>
+            <b-breadcrumb-item href="javascript:void(0)">សំណួរវាយតម្លៃថ្មី</b-breadcrumb-item>
         </b-breadcrumb>
         <div class="bg-white p-4 p-sm-5 mb-5">
             
@@ -13,7 +13,7 @@
                         <b-form-group
                         id="fieldset-horizontal"
                         label-cols-sm="4"
-                        label="មូលហេតុបោះបង់"
+                        label="សំណួរវាយតម្លៃ"
                         label-for="input-horizontal"
                         >
                         <b-form-input id="input-horizontal" size=""></b-form-input>

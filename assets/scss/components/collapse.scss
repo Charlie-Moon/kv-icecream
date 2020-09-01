@@ -2,15 +2,34 @@
     &:not(.show) {
         
         .sidebar {
-            width: 60px;
+            transform: translate3d( 0px,0,0);
             .nav-link span {
+                visibility: hidden;
+                transition-delay: unset;
+                // display: none;
+                // transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+            }
+            .dropdown-toggle::after {
                 display: none;
-                transition: all 0.5s (0.685, 0.0473, 0.346, 1);
             }
         }
 
-        main {
-            width: calc(100% - 60px);
+        @include media-breakpoint-up(lg) {
+            .sidebar {
+                width: 60px;
+            }
+            main {
+                width: calc(100% - 60px);
+            }
         }
     }
+    .dropdown-toggle::after {
+        display: none;
+    }
+    .nav-link span {
+        transition-delay: .5s;
+    }
+    // @include media-breakpoint-down(sm) {
+    //     background: rgba(0,0,0,.35);
+    // }
 }

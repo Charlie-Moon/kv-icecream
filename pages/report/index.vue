@@ -137,8 +137,8 @@
       </div>
 
       <div class="group-right d-flex d-lg-block ml-lg-auto">
-           <nuxt-link to="/product/add" tag="button" class="btn w-auto btn-danger d-flex justify-content-center align-items-center">
-            <download /> <span class="ml-2">ផលិតផលថ្មី</span>
+           <nuxt-link to="" tag="button" class="btn w-auto btn-danger d-flex justify-content-center align-items-center">
+            <download /> <span class="ml-2">ទាញយក</span>
           </nuxt-link>
       </div>
 
@@ -191,31 +191,25 @@
         prop="status"
         label="ស្ថានភាព"
         >
-        <span class="text-primary">ជោគជ័យ</span>
+        <span v-b-modal.success class="btn text-primary">ជោគជ័យ</span>
 
-      </el-table-column>
-      
-      <el-table-column
-        prop="option"
-        width="80"
-        >
-        <b-dropdown id="dropdown-1" dropright text="Drop-Right" variant="link" toggle-class="text-decoration-none" no-caret class="m-md-2">
-          <template v-slot:button-content>
-           <ellish/>
-          </template>
-          <b-dropdown-item>
-            <eye /> <span class="ml-2">មើល</span>
-          </b-dropdown-item>
-          <b-dropdown-item>
-            <edit /> <span class="ml-2">កែសម្រួល</span>
-          </b-dropdown-item>
-          <b-dropdown-item>
-            <delete /> <span class="ml-2">លុប</span>
-          </b-dropdown-item>
-        </b-dropdown>
       </el-table-column>
     </el-table>
   </div>
+  <b-modal id="success" hide-footer>
+   <div class="d-flex justify-content-between align-items-center border-bottom mb-4">
+          <p class="my-4"> លេខសម្គាល់ការបញ្ជាទិញ: R00001</p>
+          <span class="text-primary">ជោគជ័យ</span>
+    </div>
+   
+  </b-modal>
+  <b-modal id="fail" hide-footer>
+   <div class="d-flex justify-content-between align-items-center border-bottom mb-4">
+          <p class="my-4"> លេខសម្គាល់ការបញ្ជាទិញ: R00002</p>
+          <span class="text-danger">បោះ​បង់</span>
+    </div>
+   
+  </b-modal>
   </section>
 </template>
 <script>

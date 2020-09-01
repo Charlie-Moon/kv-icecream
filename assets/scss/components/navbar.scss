@@ -23,3 +23,7 @@
 .modal-header {
     border-bottom: none;
 }
+.modal-header .close {
+    color: $danger;
+    opacity: 1;
+}
