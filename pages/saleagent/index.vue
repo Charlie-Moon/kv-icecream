@@ -1,43 +1,46 @@
 <template>
   <section class="product">
     <h4 class="mb-4 font-weight-bold">ភ្នាក់ងារលក់</h4>
-    <div class="thead bg-white p-4 pr-lg-5 d-sm-flex justify-content-between align-items-center">
-      <div class="input-group mb-4 mb-sm-0 px-0 col-sm-3">
-        <label for="basic-url">ស្វែងរកតាមឈ្មោះផលិតផល</label>
-        <div class="input-group">
-          <input
-            type="text"
-            class="form-control border-right-0"
-            id="basic-url"
-            aria-describedby="basic-addon3"
-          />
-          <div class="input-group-prepend">
-            <span class="input-group-text bg-white border-left-0 rounded-right">
-              <search />
-            </span>
+    <div class="thead bg-white p-4 d-sm-flex justify-content-between align-items-center">
+
+
+          <div class="input-group mb-4 mb-sm-0 px-0 col-sm-2">
+            <label for="basic-url">រកឈ្មោះផលិតផល</label>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control border-right-0"
+                id="basic-url"
+                aria-describedby="basic-addon3"
+              />
+              <div class="input-group-prepend">
+                <span class="input-group-text bg-white border-left-0 rounded-right">
+                  <search />
+                </span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="input-group mb-4 mb-sm-0 px-0 col-sm-2 ml-sm-4">
-        <label for="basic-url">ស្វែងរកតាមទីតាំង</label>
-        <div class="input-group">
-           <b-form-select >
-              <b-form-select-option value="chamkamon">ខណ្ឌ ចំការមន</b-form-select-option>
-              <b-form-select-option value="meanchey">ខណ្ឌ មានជ័យ</b-form-select-option>
-              <b-form-select-option value="toulkork">ខណ្ឌ ទួលគក</b-form-select-option>
-            </b-form-select>
-        </div>
-      </div>
-      <div class="input-group mb-4 mb-sm-0 px-0 col-sm-2 mr-auto ml-sm-4">
-        <label for="basic-url">ស្វែងរកប្រភេទភ្នាក់ងារលក់</label>
-        <div class="input-group">
-           <b-form-select>
-              <b-form-select-option selected value="chamkamon">ទាំងអស់</b-form-select-option>
-              <b-form-select-option value="meanchey">ខណ្ឌ មានជ័យ</b-form-select-option>
-              <b-form-select-option value="toulkork">ខណ្ឌ ទួលគក</b-form-select-option>
-            </b-form-select>
-        </div>
-      </div>
+          <div class="input-group mb-4 mb-sm-0 px-0 col-sm-2 ml-sm-4">
+            <label for="basic-url">រកតាមទីតាំង</label>
+            <div class="input-group">
+              <b-form-select >
+                  <b-form-select-option value="chamkamon">ខណ្ឌ ចំការមន</b-form-select-option>
+                  <b-form-select-option value="meanchey">ខណ្ឌ មានជ័យ</b-form-select-option>
+                  <b-form-select-option value="toulkork">ខណ្ឌ ទួលគក</b-form-select-option>
+                </b-form-select>
+            </div>
+          </div>
+          <div class="input-group mb-4 mb-sm-0 px-0 col-sm-2 mr-auto ml-sm-4">
+            <label for="basic-url">រកប្រភេទភ្នាក់ងារ</label>
+            <div class="input-group">
+              <b-form-select>
+                  <b-form-select-option selected value="chamkamon">ទាំងអស់</b-form-select-option>
+                  <b-form-select-option value="meanchey">ខណ្ឌ មានជ័យ</b-form-select-option>
+                  <b-form-select-option value="toulkork">ខណ្ឌ ទួលគក</b-form-select-option>
+                </b-form-select>
+            </div>
+          </div>
+      
 
      <div class="d-sm-flex col-lg-4 px-0">
         <nuxt-link
@@ -46,7 +49,7 @@
           class="btn w-100 mb-4 mb-sm-0 btn-danger d-flex justify-content-center align-items-center"
         >
           <plus />
-          <span class="ml-2">ភ្នាក់ងារលក់ថ្មី</span>
+          <span class="ml-2">ភ្នាក់ងារថ្មី</span>
         </nuxt-link>
         <nuxt-link
           to=""

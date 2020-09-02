@@ -94,10 +94,10 @@
         <!-- More cards... -->
     </section>
     
-    <div class="thead bg-white p-4 pr-lg-5 d-sm-flex flex-md-column flex-lg-row align-items-center">
+    <div class="thead bg-white p-4 d-md-flex flex-md-column flex-lg-row align-items-center">
 
-      <div class="grid-group mb-4 mb-sm-0 px-0 col-lg-10">
-        <div class="d-flex flex-column flex-lg-row grid-column-2 mb-4 mb-sm-0">
+      <div class="d-flex flex-column flex-lg-row mb-4 mb-sm-0 px-0">
+        <div class="d-flex flex-column flex-lg-row mb-4 mb-sm-0">
             <div class="input-group mb-4 mb-lg-0">
                 <label for="basic-url" class="mb-3">រកតាមថ្ងៃ</label>
                 <div class="input-group">
@@ -107,31 +107,42 @@
             <span class="align-self-start align-self-lg-end px-3">ដល់</span>
             
         </div>
-        <div class="input-group mb-4 mb-lg-0">
-                <label for="" class="mb-3 d-none d-sm-block">&nbsp;</label>
-                <div class="input-group">
-                    <input type="date" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                </div>
-            </div>
-     
-            <div class="input-group mb-4 mb-lg-0">
-                <label for="basic-url" class="mb-3">រកតាមឈ្មោះ​អតិថិជន</label>
-                <div class="input-group">
-                    <input type="text" class="form-control border-right-0" id="basic-url" aria-describedby="basic-addon3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text bg-white border-left-0 rounded-right"><search /></span>
-                    </div>
-                </div>
-            </div>
+        <div class="input-group mb-4 mb-lg-0 pr-lg-3">
+            <label for="" class="mb-3 d-none d-sm-block">&nbsp;</label>
             <div class="input-group">
-                <label for="" class="mb-3">រកតាមស្ថានភាព</label>
-                <div class="input-group mb-4 mb-lg-0">
-                    <input type="text" class="form-control border-right-0" id="basic-url" aria-describedby="basic-addon3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text bg-white border-left-0 rounded-right"><search /></span>
-                    </div>
+                <input type="date" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+        </div>
+     
+        <div class="input-group mb-4 mb-lg-0 pr-lg-3">
+            <label for="basic-url" class="mb-3">រកតាមឈ្មោះ​អតិថិជន</label>
+            <div class="input-group">
+                <input type="text" class="form-control border-right-0" id="basic-url" aria-describedby="basic-addon3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-white border-left-0 rounded-right"><search /></span>
                 </div>
             </div>
+        </div>
+        <div class="input-group pr-lg-3">
+            <label for="" class="mb-3">រកតាមឈ្មោះ​អតិថិជន</label>
+            <div class="input-group mb-4 mb-lg-0">
+                <b-form-select>
+                  <b-form-select-option selected value="chamkamon">ទាំងអស់</b-form-select-option>
+                  <b-form-select-option value="meanchey">ខណ្ឌ មានជ័យ</b-form-select-option>
+                  <b-form-select-option value="toulkork">ខណ្ឌ ទួលគក</b-form-select-option>
+                </b-form-select>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="" class="mb-3">រកតាមស្ថានភាព</label>
+            <div class="input-group mb-4 mb-lg-0">
+                <b-form-select>
+                  <b-form-select-option selected value="chamkamon">ទាំងអស់</b-form-select-option>
+                  <b-form-select-option value="meanchey">ខណ្ឌ មានជ័យ</b-form-select-option>
+                  <b-form-select-option value="toulkork">ខណ្ឌ ទួលគក</b-form-select-option>
+                </b-form-select>
+            </div>
+        </div>
       
 
       </div>
@@ -155,12 +166,12 @@
       </el-table-column>
       <el-table-column
         prop="id"
-        label="លេខសម្គាល់ការបញ្ជាទិញ"
+        label="លេខបញ្ជាទិញ"
         >
       </el-table-column>
       <el-table-column
         prop="agt_name"
-        label="ឈ្មោះ​ភ្នាក់ងារលក់"
+        label="ឈ្មោះ​ភ្នាក់ងារ"
         width="180px">
       </el-table-column>
       <el-table-column
@@ -170,11 +181,12 @@
       </el-table-column>
        <el-table-column
         prop="time"
-        label="ម៉ោងស្នើរសុំ">
+        label="ម៉ោងស្នើរសុំ"
+        width="150px">
       </el-table-column>
       <el-table-column
         prop="place"
-        label="ទីតាំងការស្នើរសុំ"
+        label="ទីតាំងស្នើរសុំ"
         width="125px">
       </el-table-column>
      
@@ -246,3 +258,23 @@ export default {
   methods: {},
 };
 </script>
+
+<style scoped>
+  @media (min-width: 1024px) and (max-width: 1366px) {
+    .thead.bg-white {
+      flex-direction: column !important;
+    }
+    .d-flex.flex-column {
+      align-items: flex-end !important;
+    }
+    .group-right {
+      margin-top: 20px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .group-right {
+      padding-left: 60px;
+    }
+
+  }
+</style>

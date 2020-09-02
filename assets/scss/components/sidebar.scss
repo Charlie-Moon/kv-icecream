@@ -12,6 +12,10 @@
     margin-top: 95px;
     padding-top: 30px;
     transition: all .5s cubic-bezier(.685,.0473,.346,1);
+
+    @include media-breakpoint-down(lg) {
+        width: 220px;
+    }
     
     @include media-breakpoint-down(md) {
             margin-top: 83px;
@@ -34,7 +38,7 @@
             padding: 15px 16px;
             border-left: 5px solid transparent;
             white-space: nowrap;
-            transition: ease-in-out 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+            transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
             &.nuxt-link-active {
                 color: #FC5759;
                 border-left-color: #FC5759;

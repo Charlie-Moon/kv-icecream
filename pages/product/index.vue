@@ -2,7 +2,7 @@
 
  <section class="product">
    <h4 class="mb-4 font-weight-bold">ផលិតផល</h4>
-   <div class="thead bg-white p-4 pr-lg-5 d-sm-flex justify-content-between align-items-center">
+   <div class="thead bg-white p-4 d-sm-flex justify-content-between align-items-center">
 
       <div class="input-group mb-4 mb-sm-0 px-0 col-sm-4">
         <label for="basic-url">ស្វែងរកតាមឈ្មោះផលិតផល</label>

@@ -80,7 +80,7 @@
          
     </div>
 
-   <div class="thead bg-white p-4 pr-lg-5 d-sm-flex flex-md-column flex-lg-row">
+   <div class="thead bg-white p-4 d-sm-flex flex-md-column flex-lg-row">
 
       <div class="grid-group mb-4 mb-sm-0 px-0 col-lg-10">
         <div class="d-flex flex-column flex-lg-row grid-column-2 mb-4 mb-sm-0">
