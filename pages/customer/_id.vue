@@ -131,8 +131,8 @@
       </el-table-column>
       <el-table-column
         prop="id"
-        label="លេខសម្គាល់ការបញ្ជាទិញ"
-        width="80px"
+        label="លេខបញ្ជាទិញ"
+        width="130px"
         >
       </el-table-column>
       <el-table-column
@@ -157,7 +157,8 @@
      
       <el-table-column
         prop="cus_name"
-        label="ឈ្មោះ​អតិថិជន្លាកលេខ">
+        label="ឈ្មោះ​អតិថិជន"
+        width="120px">
       </el-table-column>
       <el-table-column
         prop="end"

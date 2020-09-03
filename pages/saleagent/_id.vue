@@ -153,7 +153,8 @@
       </el-table-column>
       <el-table-column
         prop="date"
-        label="កាលបរិច្ឆេទបង្កើត">
+        label="កាលបរិច្ឆេទបង្កើត"
+        width="130px">
       </el-table-column>
       <el-table-column
         prop="time"
